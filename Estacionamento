@@ -9,6 +9,12 @@
  using namespace std;
 
 
+ namespace funcionaro{
+   
+ }
+
+
+
 int main(){
 
   cout << "Aperte o botão ou aproxime o cartão"<< endl;
