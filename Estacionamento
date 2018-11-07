@@ -1,0 +1,27 @@
+
+
+
+
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <vector>
+ using namespace std;
+
+
+int main(){
+
+  cout << "Aperte o botão ou aproxime o cartão"<< endl;
+  cout << "Entrada autorizada"<< endl;
+  cout << "Entrada não autorizada"<< endl;
+
+  
+
+  cout << "Aproxime o cartão ou o ticket"<< endl;
+  cout << "Saida autorizada"<< endl;
+  cout << "Saida não autorizada"<< endl;
+
+
+
+  return 0;
+}
