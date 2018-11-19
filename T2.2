@@ -1,0 +1,83 @@
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include "matriculado.h"
+#include <cmath>
+
+
+using namespace std;
+int main()
+{
+  int alt;
+  int cadastro;
+
+  cout << "Você é cadastrado(0) ou Visitante(1) " << endl;
+  cin >> alt;
+  if(alt == 0)
+  {
+    cout << "Insira seu numero de cadastro" << endl;
+    cin >> cadastro;
+    std::string Cadast = std::to_string(cadastro);
+
+    matriculado regist;
+    regist.cadast(cadastro);
+    cout << "Registro:" << regist.regis();
+    
+  } 
+  if(alt == 1)
+  {
+    cout << "Olá visitante" << endl;
+  }
+
+  return 0;
+}
+
+/*Estacionamento
+Duas classes cadastrado e Visitante Ok
+No Main, escolher se é cadastrado ou visitante Ok
+Caso seja visitante, contar o tempo de permanencia 
+Caso seja cadastrado: Escrever numero e procurar em lista com ponteiro Nº do cadastro e retornar Nome. Contar o tempo de permanencia também */
+
+
+
+
+
+Visitante.h
+#include <string>
+using namespace std;
+
+class visitante
+{
+public:
+int tempo;
+
+};
+
+
+
+
+
+matriculado.h
+#include <string>
+using namespace std;
+
+class matriculado
+{
+int tempo;
+string nome;
+string cadastro;
+public:
+
+void cadast(string);
+string regis() {return cadastro;}
+
+};
+
+
+void matriculado::cadast(string cadastr)
+{
+cadastro = cadastr;
+
+
+};
