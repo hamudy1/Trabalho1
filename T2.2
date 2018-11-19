@@ -15,7 +15,7 @@ int main()
 
   for(i=0;;i++){ // loop infinito
 
-  cout << "Aprocime o cartão(0) ou aperte o botão(1) " << endl;
+  cout << endl <<"Aprocime o cartão(0) ou aperte o botão(1) " << endl;
   cin >> alt;
   if(alt == 0)
   {
@@ -25,7 +25,7 @@ int main()
 
     matriculado regist;
     regist.cadast(Cadast);
-    cout << "Registro:" << regist.regis();
+    cout << "Registro:" << regist.regis() << endl;
     
   } 
   if(alt == 1)
@@ -48,7 +48,7 @@ horarioLocal = localtime(&timer); // Converte a hora atual para a hora local
   int min = horarioLocal->tm_min;
   int sec = horarioLocal->tm_sec;
 
-cout << " Horário: " << (hora-2) << ":" << min << ":" << sec << endl;
+cout << "Horário: " << (hora-2) << ":" << min << ":" << sec << endl;
 cout << "Data: " << dia << "/" << mes << "/" << ano << endl;
 
 }
