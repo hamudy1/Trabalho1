@@ -12,7 +12,7 @@ int main()
   int alt;
   int cadastro;
 
-  cout << "Você é cadastrado(0) ou Visitante(1) " << endl;
+  cout << "Aprocime o cartão(0) ou aperte o botão(1) " << endl;
   cin >> alt;
   if(alt == 0)
   {
@@ -30,19 +30,20 @@ int main()
     cout << "Retire seu tichet" << endl;
   }
 
+
 time_t timer;
 struct tm *horarioLocal;
 
 time(&timer); // Obtem informações de data e hora
 horarioLocal = localtime(&timer); // Converte a hora atual para a hora local
 
-int dia = horarioLocal->tm_mday;
-int mes = horarioLocal->tm_mon + 1;
-int ano = horarioLocal->tm_year + 1900;
+  int dia = horarioLocal->tm_mday;
+  int mes = horarioLocal->tm_mon + 1;
+  int ano = horarioLocal->tm_year + 1900;
 
-int hora = horarioLocal->tm_hour;
-int min = horarioLocal->tm_min;
-int sec = horarioLocal->tm_sec;
+  int hora = horarioLocal->tm_hour;
+  int min = horarioLocal->tm_min;
+  int sec = horarioLocal->tm_sec;
 
 cout << "Horário: " << (hora-2) << ":" << min << ":" << sec << endl;
 cout << "Data: " << dia << "/" << mes << "/" << ano << endl;
@@ -55,7 +56,6 @@ Duas classes cadastrado e Visitante Ok
 No Main, escolher se é cadastrado ou visitante Ok
 Caso seja visitante, contar o tempo de permanencia 
 Caso seja cadastrado: Escrever numero e procurar em lista com ponteiro Nº do cadastro e retornar Nome. Contar o tempo de permanencia também */
-
 
 
 
